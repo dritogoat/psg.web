@@ -24,5 +24,14 @@ nav a{
 
 .cardJugador{
     background-color: rgba(255, 255, 255, 0.719);
+    margin: 10px;
+    padding: 10px;
+}
+.jugadores{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.tarjeta-leyenda{
+    background-color: gold;
 }
 
