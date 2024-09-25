@@ -1,37 +1,63 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-h1{
+h1 {
     color: rgb(211, 16, 16)
 }
 
-body{
+body {
     background-color: rgb(12, 12, 100);
     background-image: url(imagenes/fondo1.jpeg);
     font-family: "Fira Sans Condensed", sans-serif;
 }
-header{
+
+header {
     text-align: center;
 }
-nav{ text-align: center;
+
+nav {
+    text-align: center;
 
 }
-nav a{
-    background-color: red ;
-    margin:20px;
+
+nav a {
+    background-color: red;
+    margin: 20px;
     padding: 10px;
+    text-decoration: none;
 }
 
-.cardJugador{
+nav a:hover {
+    font-weight: 700;
+}
+
+.cardJugador {
     background-color: rgba(255, 255, 255, 0.719);
     margin: 10px;
     padding: 10px;
 }
-.jugadores{
-    display:grid;
-    grid-template-columns: auto auto auto auto auto;
-}
-.tarjeta-leyenda{
-    background-color: gold;
+
+.cardJugador img,
+.tarjeta-leyenda img {
+    width: 100%
 }
 
+.jugadores,
+.leyendas,
+.titulosmain {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.tarjeta-leyenda {
+    background-color: gold;
+    margin: 10px;
+    padding: 10px;
+}
+
+#Logo {
+    width: 30%;
+}
+
+.titulos {
+    background-image: url("imagenes/trodeos.jpg")
+}
