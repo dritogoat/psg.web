@@ -8,6 +8,7 @@ body {
     background-color: rgb(12, 12, 100);
     background-image: url(imagenes/fondo1.jpeg);
     font-family: "Fira Sans Condensed", sans-serif;
+    margin: 0%;
 }
 
 header {
@@ -24,6 +25,7 @@ nav a {
     margin: 20px;
     padding: 10px;
     text-decoration: none;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -37,7 +39,9 @@ nav a:hover {
 }
 
 .cardJugador img,
-.tarjeta-leyenda img {
+.tarjeta-leyenda img,
+.cardtitulos img,
+.producto img {
     width: 100%
 }
 
@@ -59,5 +63,45 @@ nav a:hover {
 }
 
 .titulos {
-    background-image: url("imagenes/trodeos.jpg")
+    background-image: url("imagenes/trodeos.jpg");
+}
+
+.cardtitulos {
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+.store {
+    background-image: url("imagenes/store.jpg");
+}
+
+.producto {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.tienda {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media (max-width: 700px) {
+    nav a {
+        font-size: 2em;
+    }
+
+    .jugadores,
+    .leyendas,
+    .titulosmain,
+    .tienda {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .producto {
+        font-size: 2em;
+    }
 }
